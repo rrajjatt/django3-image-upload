@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <table border="0">
+            <tr>
+                <td style="width: 300; height: 600;"><a href=""><img src="{{ result.product_image.url }}" alt="" width="600px" height="600px"></a></td>
+            
+            <td>
+                <table border="0">
+                    <tr>
+                        <td><h1><b>{{ result.product_name }}</b></h3></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><h2><strong>Price : Rs. {{ result.price }}</strong></h2></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>{{ result.description }}</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        </table>
+    </form>
+</body>
+</html>
